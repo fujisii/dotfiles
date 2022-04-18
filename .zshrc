@@ -65,16 +65,19 @@ zstyle ':completion:*:descriptions' format '%F{yellow}Completing %B%d%b%f'$DEFAU
 ## マッチ種別を別々に表示
 zstyle ':completion:*' group-name ''
 
-# セパレータを設定する
+## セパレータを設定する
 zstyle ':completion:*' list-separator '-->'
 zstyle ':completion:*:manuals' separate-sections true
 
-# 名前で色を付けるようにする
+## 名前で色を付けるようにする
 autoload colors
 colors
 
-# LS_COLORSを設定しておく
+## LS_COLORSを設定しておく
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
-# ファイル補完候補に色を付ける
+## ファイル補完候補に色を付ける
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+## 小文字でも大文字ディレクトリ、ファイルを補完できるようにする
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
