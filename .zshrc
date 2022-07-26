@@ -99,3 +99,14 @@ export NVM_DIR="$HOME/.nvm"
 # --------------------------------------------------------------------------------
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
+
+# --------------------------------------------------------------------------------
+# goenv
+# インストール手順は以下を参照
+# https://github.com/syndbg/goenv/blob/master/INSTALL.md
+# --------------------------------------------------------------------------------
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
