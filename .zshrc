@@ -95,12 +95,6 @@ export NVM_DIR="$HOME/.nvm"
     [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # --------------------------------------------------------------------------------
-# openjdk@11
-# --------------------------------------------------------------------------------
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
-
-# --------------------------------------------------------------------------------
 # goenv
 # インストール手順は以下を参照
 # https://github.com/syndbg/goenv/blob/master/INSTALL.md
